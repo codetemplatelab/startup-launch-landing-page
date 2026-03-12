@@ -1,47 +1,59 @@
 ﻿# Startup Launch Landing Page
 
-A premium, modern landing page template for launching startups, products, and MVPs. Built with React + Vite, Tailwind CSS, and advanced animation libraries to deliver a conversion-focused experience.
+Premium startup launch template with a full landing page, authentication flows, and a responsive dashboard UI. Built to be production-ready and easy to customize.
+
+## Demo
+https://startup-launch-landing-page.vercel.app/
+
+## Features
+- Conversion-focused landing page sections
+- Animated hero, demo previews, and charts
+- Authentication screens (Sign In / Sign Up)
+- Responsive dashboard with collapsible sidebar
+- SEO meta tags + favicon support
 
 ## Tech Stack
 - React 19 + Vite
-- Tailwind CSS 4
+- Tailwind CSS
 - Framer Motion + GSAP
 - Three.js (React Three Fiber)
-- tsparticles (lightweight particle background)
-- Lenis smooth scrolling
+- tsparticles
 - Lucide icons
-- Lottie animations
 
-## Getting Started
+## Installation
 ```bash
 npm install
+```
+
+## Development
+```bash
 npm run dev
 ```
 
-## Build
+## Production Build
 ```bash
 npm run build
 npm run preview
 ```
 
 ## Project Structure
-- `src/components` UI components and reusable blocks
-- `src/components/dashboard` Dashboard-specific components
-- `src/pages` Page-level layouts (Landing, Sign In, Sign Up, Dashboard)
-- `src/data/landingData.js` Editable content for the landing page
-- `src/assets` Local assets (Lottie animation)
-- `public/assets` Demo preview images and OG artwork
+- `src/components` Shared UI components
+- `src/components/dashboard` Dashboard UI components
+- `src/pages` App pages (Landing, Auth, Dashboard)
+- `src/pages/dashboard` Dashboard sub-pages
+- `src/data/landingData.js` Landing page content
+- `src/assets` Local assets
+- `public/assets` Static media and OG image
 
 ## Customization
-- Update content in `src/data/landingData.js`
+- Update section content in `src/data/landingData.js`
 - Adjust global styles in `src/index.css`
-- Swap imagery in `public/assets`
-- Replace brand colors in `tailwind.config.js`
+- Replace images in `public/assets`
+- Update theme tokens in `tailwind.config.js`
 
 ## Notes
-- Authentication screens and dashboard are front-end templates only.
-- All animations respect `prefers-reduced-motion` settings.
-- SVG preview images are placeholders and safe to replace.
+- Auth and dashboard are frontend templates (no backend wired).
+- Animations respect `prefers-reduced-motion`.
 
 ---
-Designed for digital marketplace delivery: clean code, modular components, and fast customization.
+Built for digital product distribution: clean structure, modular components, and fast setup.
